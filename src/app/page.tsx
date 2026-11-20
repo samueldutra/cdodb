@@ -127,7 +127,7 @@ export default function Home() {
               sizes="(min-width: 640px) 176px, 144px"
               preload
               fetchPriority="high"
-              className="w-36 drop-shadow-[0_8px_20px_rgb(0_0_0/0.6)] sm:w-44"
+              className="w-36 sm:w-44"
             />
 
             <p className="mt-5 inline-flex items-center gap-2.5 rounded-full border border-wa/35 bg-wa/10 px-4 py-1.5 text-xs font-bold tracking-[0.14em] text-wa uppercase shadow-[inset_0_1px_0_rgb(255_255_255/0.06)]">
