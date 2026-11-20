@@ -120,12 +120,12 @@ export default function Home() {
           <div aria-hidden className="barber-stripes absolute inset-x-0 top-0 h-1.5" />
           <div className="relative mx-auto flex max-w-xl flex-col items-center text-center">
             <Image
-              src="/brand/logo.svg"
+              src="/brand/logo.png"
               alt={site.name}
-              width={935}
-              height={779}
-              unoptimized
-              loading="eager"
+              width={704}
+              height={587}
+              sizes="(min-width: 640px) 176px, 144px"
+              preload
               fetchPriority="high"
               className="w-36 drop-shadow-[0_8px_20px_rgb(0_0_0/0.6)] sm:w-44"
             />
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="mx-auto mt-8 max-w-sm overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">
             <div className="flex items-center gap-3 bg-[#075e54] px-4 py-3 text-white">
               <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-ink ring-2 ring-white/30">
-                <Image src="/brand/logo.svg" alt="" width={30} height={25} unoptimized />
+                <Image src="/brand/logo.png" alt="" width={30} height={25} sizes="30px" />
               </span>
               <div className="leading-tight">
                 <p className="font-semibold">{site.name}</p>
