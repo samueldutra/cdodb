@@ -175,27 +175,27 @@ export default function Home() {
               </div>
             </div>
             <div className="space-y-2 bg-[#e7ddd3] px-3 py-4">
-              <p className="mx-auto w-fit rounded-md bg-white/80 px-2.5 py-0.5 text-xs text-ink/60">
+              <p className="mx-auto w-fit rounded-md bg-white/80 px-2.5 py-0.5 text-xs text-ink/70">
                 Hoje
               </p>
               <div className="max-w-[88%] rounded-xl rounded-tl-none bg-white p-3 text-[0.95rem] leading-snug shadow-sm">
                 <p className="font-bold">🔥 OFERTA DO DIA</p>
                 <p className="mt-1.5">{sample.name}</p>
                 <p className="mt-1.5">
-                  <span className="text-ink/50 line-through">De {brl(sample.from)}</span>
+                  <span className="text-ink/70 line-through">De {brl(sample.from)}</span>
                   <br />
                   <span className="font-bold">Por {brl(sample.to)}</span> ({discount(sample)}% OFF)
                 </p>
                 <p className="mt-1.5 text-[#027eb5] underline">🛒 Ver oferta no {sample.store}</p>
-                <p className="mt-1 text-right text-[0.7rem] text-ink/40">09:12</p>
+                <p className="mt-1 text-right text-[0.7rem] text-ink/70">09:12</p>
               </div>
               <div className="max-w-[88%] rounded-xl rounded-tl-none bg-white p-3 text-[0.95rem] leading-snug shadow-sm">
                 <p>⚡ Cupom relâmpago em lâminas — vale só hoje.</p>
-                <p className="mt-1 text-right text-[0.7rem] text-ink/40">14:40</p>
+                <p className="mt-1 text-right text-[0.7rem] text-ink/70">14:40</p>
               </div>
             </div>
           </div>
-          <p className="mt-4 text-center text-xs text-ink/50">Prévia ilustrativa das mensagens do grupo.</p>
+          <p className="mt-4 text-center text-xs text-ink/70">Prévia ilustrativa das mensagens do grupo.</p>
         </section>
 
         {/* Categorias */}
