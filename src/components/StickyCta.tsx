@@ -6,7 +6,9 @@ import { JoinButton } from "./JoinButton";
 
 /**
  * Barra fixa no rodapé (só no mobile). Aparece quando nenhum outro botão de
- * entrada (marcado com data-cta-anchor) está visível na tela.
+ * entrada (marcado com data-cta-anchor) está visível na tela. Quando oculta,
+ * fica `inert`: sai da árvore de acessibilidade e do foco do teclado (aria-hidden
+ * com link focável dentro é erro de acessibilidade).
  */
 export function StickyCta() {
   const [visible, setVisible] = useState(false);
@@ -29,7 +31,7 @@ export function StickyCta() {
 
   return (
     <div
-      aria-hidden={!visible}
+      inert={!visible}
       className={`fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur transition-transform duration-300 sm:hidden ${
         visible ? "translate-y-0" : "translate-y-full"
       }`}
