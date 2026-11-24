@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: site.description,
   alternates: { canonical: "/" },
   other: {
-    "facebook-domain-verification": "ka4b587j4w1dw11qzxc5v04r1wrenq",
+    "facebook-domain-verification": "6yesvrmbxid33j01qc5wrx8di64ney",
   },
   openGraph: {
     type: "website",
